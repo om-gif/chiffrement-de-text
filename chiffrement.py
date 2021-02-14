@@ -70,28 +70,4 @@ def decrypt_txt():
     return message_code
 
 
-###PARTIE2:
-
-####exo6
-
-def key(txt):
-
-    nettoyage(txt)#enelve les espace et les caractere speciaux
-
-    compteur = 0
-
-    n = len(txt)
-
-    for i in range(len(txt)):
-
-        for j in range(i+4,n):
-
-            if (txt[i:i+3] == txt[j:j+3]):
-
-                compteur = compteur + 1
-
-        print(txt[i:i+3])
-        print(compteur)
-
-
 
